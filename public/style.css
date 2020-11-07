@@ -1,0 +1,17 @@
+li {
+    font-size: 2rem;
+    width: 300px;
+    margin: 4px;
+    padding: 4px;
+    list-style: none
+    }
+    .midlaner {background-color: #eeeeee}
+    .toplaner {background-color: #ffea00}
+h2 {
+    color: red;
+
+}
+
+p{
+    background-color: yellow;
+}
