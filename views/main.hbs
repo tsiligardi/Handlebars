@@ -1,10 +1,20 @@
-<h2>Liste of my most loved League champions</h2>
+<!--h2>Liste of my most loved League champions</h2>
 <ul>
   <li class="midlaner">Leblanc</li>
   <li class="midlaner">Lux</li>
   <li class="toplaner">Teemo</li>
   <li class="midlaner">Kassadin</li>
   <li class="toplaner">Jarvan IV</li>
-</ul>
+</ul-->
 <p>{{> lovedChamps}}
-{{> hatedChamps}}</p><!--con {>} mi riferisco al nome di un partials->
+{{> hatedChamps}}</p><!--con {>} mi riferisco al nome di un partials-->
+{{!-- depending on the value of the listExists variable --}}
+{{!-- if it’s true then the list will be rendered --}}
+{{!-- if the value is equal to false the list will not be rendered --}}
+{{#if listExists}} 
+  <ul>
+    {{#each suggestedChamps}}
+      <li class={{this.lane}}>{{this.name}}</li> <!--non ho capito cosa succeda qui-->
+    {{/each}}
+  </ul>
+{{/if}}
